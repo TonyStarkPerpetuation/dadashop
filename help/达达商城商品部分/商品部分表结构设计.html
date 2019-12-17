@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>未命名</title>
+    <style>
+        .index {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        li {
+            list-style: none;
+            padding: 5px;
+        }
+        .first-li {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .second-li {
+            font-weight: bold;
+        }
+        .third-li {
+            font-weight: normal;
+        }
+        .block {
+            display: block;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-color: #E8E8E8;
+        }
+        .first-tr {
+            text-align: center;
+        }
+        tr:hover {
+            background: #ECF9FF;
+        }
+        td {
+            font-weight: normal;
+            padding: 5px;
+            white-space: nowrap;
+        }
+        a {
+            color: #000000;
+            background-color: transparent;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .module {
+            color: green;
+        }
+        .module-list {
+            color: #1890ff;
+        }
+    </style>
+</head>
+<body><center class="index">目录</center>
+<hr><ul>
+<li class="first-li"><a class="module" id="module-DB_REVERSE_MYSQL-from" href="#module-DB_REVERSE_MYSQL-to">1 逆向解析_MYSQL</a>
+<ul><li class="second-li"><a class="module-list" id="module-DB_REVERSE_MYSQL-relation-from" href="#module-DB_REVERSE_MYSQL-relation-to">1 关联关系</a></li>
+<li class="second-li"><a class="module-list" id="module-DB_REVERSE_MYSQL-tableList-from" href="#module-DB_REVERSE_MYSQL-tableList-to">2 表清单</a></li>
+<li class="second-li"><a class="module-list" id="module-DB_REVERSE_MYSQL-tableColumnList-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-to">3 表列清单</a>
+<ul><li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_BRAND-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_BRAND-to">3.1 DDSC_BRAND【品牌表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_GOODS_CATALOG-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_GOODS_CATALOG-to">3.2 DDSC_GOODS_CATALOG【商品分类表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SALE_ATTR_VALUE-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SALE_ATTR_VALUE-to">3.3 DDSC_SALE_ATTR_VALUE【销售属性值表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU-to">3.4 DDSC_SKU【SKU表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_IMAGE-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_IMAGE-to">3.5 DDSC_SKU_IMAGE【SKU图片表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_SPEC_VALUE-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_SPEC_VALUE-to">3.6 DDSC_SKU_SPEC_VALUE【SKU规格属性值表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU-to">3.7 DDSC_SPU【SPU表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SALE_ATTR-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SALE_ATTR-to">3.8 DDSC_SPU_SALE_ATTR【SPU销售属性表】</a></li>
+<li class="third-li"><a id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SPEC-from" href="#module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SPEC-to">3.9 DDSC_SPU_SPEC【SPU规格表】</a></li>
+</ul></li></ul></li></ul>
+<hr><ul>
+
+<li class="first-li"><a class="module" id="module-DB_REVERSE_MYSQL-to" href="#module-DB_REVERSE_MYSQL-from">1 逆向解析_MYSQL</a><ul>
+<li class="second-li"><a class="module-list" class="block" id="module-DB_REVERSE_MYSQL-relation-to" href="#module-DB_REVERSE_MYSQL-relation-from">1.1 关联关系</a>
+<img style="width: 98%;margin-top: 10px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAOKUlEQVR4Xu2aedDVYxTHT0RkyVaypAyypG2KbDGVmKJpGttQ2kaopGSIoaHUjKUVMykqZUYNmdSMpWgxWrUojKWytEhUihYKZb7PzO+de9/N9deZ8/b5zbxD7/3de879nOfzPOd5fm+lgwcPHjQuCECgVAKVEISRAYGyCSAIowMC5RBAEIYHBBCkbALff/99evHss88ud6Ds2LHDdu/ebbVq1cq7b9euXfbVV1/ZpZdeWuL92t5VqlQp/X7JkiXWoEEDq1q1aon7/vjjD1u9erVddtllea/9+eefprinnXZa3u+//vprO/bYY+3MM8/834N7586dppyLf4///UGHyBsO+RXkjTfeSKW+9dZbyy3566+/nl6/44478u4bPny4/fjjj9a+fXu75ppr8l5bvny5LVq0yO6//37r37+/PfTQQ3mD/ZdffrEaNWrYzz//bM8884yNGDEi7/2SZsKECfb000/b0UcfnV47cOCAPfjgg9arVy8777zz8u7/9ddfTTH37dtn+/fvL/qvxP7pp59sy5YtdtRRR9k555xjffr0sSOOOCK9f+LEifbNN98UNOTPP/9869atW0H3VoSbDilBNBsvWLAgr26fffZZ+rdm99yradOmRYP5r7/+SgNq0KBBduqppxbdNnfuXNP7u3fvbk8++aQ9+uijVr169aLXx48fb19++aXVqVPHPv30U7vgggvSQNeKcPPNN1vnzp1t8uTJZQqiDxo7dqwdfvjhdtddd6XPlXAffPCBPfHEEyXG3969e2327NlWuXLl9J6VK1fa33//bR06dLCTTz45yXHSSScVrWrZBzz77LPWokULu/DCC9OvtNqdeOKJJhlyL62U8+bNs4cffrgijP2CvsMhJcj27dttzpw5JYquX2SDI3vxyiuvtDPOOCP9c+HChelHA+Odd96xli1bpkE0Y8YMGzJkSGp3NHNrsGt2r127dlpVnnrqKbv77rvTgNVAv+WWW9IAPeaYY9Isfuedd9prr71WQhCtBJJAlwb95s2b7dxzz03/Xrp0aVp1spbwuuuuS4O5+JXJ27t377RS/PDDDzZq1Kgkc/HJQIK0bdvWLr744pSLRJfEylPX8ccfb/fdd5998cUX9u677yJIQWpVkJsKabEGDx6cZnvt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" title="DB_REVERSE_MYSQL-关系图"/>
+</li><hr>
+<li><a class="module-list" id="module-DB_REVERSE_MYSQL-tableList-to" href="module-DB_REVERSE_MYSQL-tableList-from">1.2  表清单</a>
+
+
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>名称</td><td>代码</td><td>备注</td></tr>
+<tr><td>品牌表</td><td>DDSC_BRAND</td><td></td></tr>
+<tr><td>商品分类表</td><td>DDSC_GOODS_CATALOG</td><td></td></tr>
+<tr><td>销售属性值表</td><td>DDSC_SALE_ATTR_VALUE</td><td></td></tr>
+<tr><td>SKU表</td><td>DDSC_SKU</td><td></td></tr>
+<tr><td>SKU图片表</td><td>DDSC_SKU_IMAGE</td><td></td></tr>
+<tr><td>SKU规格属性值表</td><td>DDSC_SKU_SPEC_VALUE</td><td></td></tr>
+<tr><td>SPU表</td><td>DDSC_SPU</td><td></td></tr>
+<tr><td>SPU销售属性表</td><td>DDSC_SPU_SALE_ATTR</td><td></td></tr>
+<tr><td>SPU规格表</td><td>DDSC_SPU_SPEC</td><td></td></tr>
+</table>
+</li><hr>
+
+<li><a class="module-list" id="module-DB_REVERSE_MYSQL-tableColumnList-to" href="module-DB_REVERSE_MYSQL-tableColumnList-from">1.3 表列清单</a>
+
+<ul style="padding: 0"> <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_BRAND-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_BRAND-from">1.3.1 DDSC_BRAND【品牌表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>修改时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>NAME</td><td>品牌名称</td><td>VARCHAR(20)</td><td></td><td></td></tr>
+<tr><td>LOGO</td><td>LOGO图片</td><td>VARCHAR(100)</td><td></td><td></td></tr>
+<tr><td>FIRST_LETTER</td><td>首字母</td><td>VARCHAR(1)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_GOODS_CATALOG-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_GOODS_CATALOG-from">1.3.2 DDSC_GOODS_CATALOG【商品分类表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>修改时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>NAME</td><td>分类名称</td><td>VARCHAR(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SALE_ATTR_VALUE-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SALE_ATTR_VALUE-from">1.3.3 DDSC_SALE_ATTR_VALUE【销售属性值表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>修改时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>SALE_ATTR_VALUE_NAME</td><td>销售属性名称</td><td>VARCHAR(20)</td><td></td><td></td></tr>
+<tr><td>SALE_ATTR_ID</td><td>销售属性id</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>SKU_ID</td><td>sku</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU-from">1.3.4 DDSC_SKU【SKU表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>修改时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>NAME</td><td>SKU名称</td><td>VARCHAR(50)</td><td></td><td></td></tr>
+<tr><td>CAPTION</td><td>副标题</td><td>VARCHAR(100)</td><td></td><td></td></tr>
+<tr><td>PRICE</td><td>单价</td><td>DECIMAL(10,2)</td><td></td><td></td></tr>
+<tr><td>COST_PRICE</td><td>进价</td><td>DECIMAL(10,2)</td><td></td><td></td></tr>
+<tr><td>MARKET_PRICE</td><td>市场价</td><td>DECIMAL(10,2)</td><td></td><td></td></tr>
+<tr><td>STOCK</td><td>库存</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>SALES</td><td>销量</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>COMMENTS</td><td>评价数</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>IS_LAUNCHED</td><td>是否上架销售</td><td>BIT(1)</td><td></td><td></td></tr>
+<tr><td>DEFAULT_IMAGE_URL</td><td>默认图片</td><td>VARCHAR(100)</td><td></td><td></td></tr>
+<tr><td>SPU_ID</td><td>SPU</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_IMAGE-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_IMAGE-from">1.3.5 DDSC_SKU_IMAGE【SKU图片表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>更新时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>IMAGE</td><td>图片</td><td>VARCHAR(100)</td><td></td><td></td></tr>
+<tr><td>SKU_ID</td><td>sku</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_SPEC_VALUE-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SKU_SPEC_VALUE-from">1.3.6 DDSC_SKU_SPEC_VALUE【SKU规格属性值表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>更新时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>NAME</td><td>SKU规格名称值</td><td>VARCHAR(20)</td><td></td><td></td></tr>
+<tr><td>SKU_ID</td><td>sku</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>SPU_SPEC_ID</td><td>SPU规格名称</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU-from">1.3.7 DDSC_SPU【SPU表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>更新时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>NAME</td><td>名称</td><td>VARCHAR(50)</td><td></td><td></td></tr>
+<tr><td>SALES</td><td>商品销量</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>COMMENTS</td><td>评价数量</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>BRAND_ID</td><td>品牌</td><td>INT(10)</td><td></td><td></td></tr>
+<tr><td>CATALOG_ID</td><td>商品类别</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SALE_ATTR-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SALE_ATTR-from">1.3.8 DDSC_SPU_SALE_ATTR【SPU销售属性表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>更新时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>SALE_ATTR_NAME</td><td>SPU销售属性名称</td><td>VARCHAR(20)</td><td></td><td></td></tr>
+<tr><td>SPU_ID</td><td>SPU</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+ <li><a class="block" id="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SPEC-to" href="module-DB_REVERSE_MYSQL-tableColumnList-DDSC_SPU_SPEC-from">1.3.9 DDSC_SPU_SPEC【SPU规格表】</a>
+
+<table border="1" cellspacing="0">
+<tr class="first-tr"><td>代码</td><td>名称</td><td>数据类型(MYSQL)</td><td>主键</td><td>备注</td></tr>
+<tr><td>ID</td><td>id</td><td>INT(10)</td><td>√</td><td></td></tr>
+<tr><td>CREATE_TIME</td><td>创建时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>UPDATE_TIME</td><td>更新时间</td><td>DATETIME</td><td></td><td></td></tr>
+<tr><td>SPEC_NAME</td><td>SPU规格名称</td><td>VARCHAR(20)</td><td></td><td></td></tr>
+<tr><td>SPU_ID</td><td>SPU</td><td>INT(10)</td><td></td><td></td></tr>
+</table>
+</li>
+
+</ul></li></ul><hr></li></ul></body>
+</html>
